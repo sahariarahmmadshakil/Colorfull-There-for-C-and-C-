@@ -1,0 +1,98 @@
+{
+  "window.zoomLevel": 1,
+  "editor.fontSize": 16,
+  "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "diffEditor.wordWrap": "on",
+  "editor.wordWrap": "on",
+  "editor.accessibilitySupport": "off",
+  "security.workspace.trust.untrustedFiles": "open",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "editor.defaultFormatter": "vscode.html-language-features",
+  "html.hover.references": false,
+  "css.hover.references": false,
+  "less.hover.references": false,
+  "scss.hover.references": false,
+  "workbench.editor.defaultBinaryEditor": "default",
+  "editor.formatOnType": true,
+  "html.format.contentUnformatted": "",
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "workbench.colorTheme": "Andromeda Bordered",  // Ensure you have this theme installed
+  "explorer.confirmDelete": false,
+  "php.validate.executablePath": "",
+  
+  // Customizations for syntax highlighting (optional)
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "keyword",
+          "keyword.control",
+          "keyword.operator"
+        ],
+        "settings": {
+          "foreground": "#f82672" // Custom color for keywords
+        }
+      },
+      {
+        "scope": [
+          "meta.property-name"
+        ],
+        "settings": {
+          "foreground": "#00e8c6" // Custom color for CSS property names
+        }
+      }
+    ]
+  },
+  
+  // Settings for different languages
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "workbench.editor.empty.hint": "hidden",
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  
+  // Configure Code Runner to run C and C++ programs
+  "code-runner.executorMap": {
+    "javascript": "node",
+    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+    "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt < input.txt > output.txt",
+    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "python": "python -u",
+    "php": "php",
+    "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+    "go": "go run",
+    "ruby": "ruby",
+    "swift": "swift"
+  },
+
+  // Ensure Code Runner runs in the terminal
+  "code-runner.runInTerminal": true,
+
+  // Make sure it saves all files before running the code
+  "code-runner.saveAllFilesBeforeRun": true,
+
+  // Use the terminal as root
+  "code-runner.terminalRoot": "/",
+
+  // Bash as default terminal
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+
+  // Enable custom terminal profile
+  "terminal.integrated.profiles.windows": {
+    "Git Bash": {
+      "path": "C:\\Program Files\\Git\\bin\\bash.exe"
+    }
+  }
+}
