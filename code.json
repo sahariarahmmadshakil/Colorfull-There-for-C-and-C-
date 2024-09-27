@@ -65,9 +65,16 @@
   
   // Configure Code Runner to run C and C++ programs
   "code-runner.executorMap": {
+
     "javascript": "node",
     "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+    // =========================================================
+    // without text file code run 
+    // "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    // ==========================================================
+    // with text file code run 
     "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt < input.txt > output.txt",
+    // ==========================================================
     "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
     "python": "python -u",
     "php": "php",
